@@ -1,0 +1,25 @@
+/* Add these CSS variables to support light/dark mode toggles */
+:root {
+  --flow-bg-color: #111111;
+  --flow-text-color: #e0e0e0;
+  --flow-border-color: #444444;
+  --flow-node-color: #333333;
+  --flow-node-border: #444444;
+  --flow-edge-color: #4d94ff;
+  --flow-button-bg: #222222;
+  --flow-button-hover: #333333;
+}
+
+/* You could add a light mode variant if needed */
+@media (prefers-color-scheme: light) {
+  :root.light-theme {
+    --flow-bg-color: #f0f0f0;
+    --flow-text-color: #333333;
+    --flow-border-color: #dddddd;
+    --flow-node-color: #ffffff;
+    --flow-node-border: #dddddd;
+    --flow-edge-color: #1677ff;
+    --flow-button-bg: #ffffff;
+    --flow-button-hover: #f2f2f2;
+  }
+}
